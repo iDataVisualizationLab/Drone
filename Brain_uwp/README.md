@@ -9,11 +9,11 @@ Follow this instruction on how to get access to key https://developer.dji.com/wi
 After you can do the following:
   1-	To Register the app first go to https://developer.dji.com/ and register a user
   2-	Then login to your account and clink on create app button
-  3-	Choose SDK as Windows SDK app name does not matter, Package Name should be same as Applications package name,
-  o	To get the applications package name, open the project solution in visual studio
-  o	On the solution explorer window (usually on the right) find Package.appxmanifest file and click it twice
-  o	Navigate to Packaging
-  o	Now you should see the Package name on the page.
+  3-	Choose SDK as Windows SDK app name does not matter, Package Name should be same as Applications package name, 
+    - To get the applications package name, open the project solution in visual studio
+    - On the solution explorer window (usually on the right) find Package.appxmanifest file and click it twice
+    - Navigate to Packaging
+    - Now you should see the Package name on the page.
   4-	Category and Description does not matter put some random stuff or fill it correctly
   5-	Click on create app
   6-	After registration you should receive a email.
