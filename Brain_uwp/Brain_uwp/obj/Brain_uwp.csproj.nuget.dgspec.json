@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\Brain_uwp\\Brain_uwp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\Brain_uwp\\Brain_uwp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\Brain_uwp\\Brain_uwp.csproj",
+        "projectName": "Brain_uwp",
+        "projectPath": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\Brain_uwp\\Brain_uwp.csproj",
+        "packagesPath": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\Brain_uwp\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17134"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17134": {
+            "projectReferences": {
+              "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\DJIVideoParser\\DJIVideoParser.vcxproj": {
+                "projectPath": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\DJIVideoParser\\DJIVideoParser.vcxproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17134": {
+          "dependencies": {
+            "MedallionShell": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.8, )"
+            },
+            "Win2D.uwp": {
+              "target": "Package",
+              "version": "[1.23.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\DJIVideoParser\\DJIVideoParser.vcxproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\DJIVideoParser\\DJIVideoParser.vcxproj",
+        "projectName": "DJIVideoParser",
+        "projectPath": "C:\\Users\\GuestIDVL.DESKTOP-B90QAV1\\OneDrive\\Brain_uwp\\DJIVideoParser\\DJIVideoParser.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    }
+  }
+}

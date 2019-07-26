@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  IgnorableNamespaces="uap mp iot rescap uap3">
+
+  <Identity
+    Name="com.dji.brainUwp"
+    Publisher="CN=sezer"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="033d4451-f2f3-4850-af9e-d005f38e4f1b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Brain_uwp</DisplayName>
+    <PublisherDisplayName>sezer</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="Brain_uwp.App">
+      <uap:VisualElements
+        DisplayName="Brain_uwp"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="Brain_uwp"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <desktop:Extension Category="windows.fullTrustProcess" Executable="fulltrustprocess.exe">
+          <desktop:FullTrustProcess>
+            <desktop:ParameterGroup GroupId="SyncGroup" Parameters="/Sync"/>
+            <desktop:ParameterGroup GroupId="OtherGroup" Parameters="/Other"/>
+          </desktop:FullTrustProcess>
+        </desktop:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust"/>
+    <Capability Name="codeGeneration"/>
+    <iot:Capability Name="systemManagement"/>
+    <uap:Capability Name="videosLibrary"/>
+    <uap:Capability Name="picturesLibrary"/>
+    <uap3:Capability Name="backgroundMediaPlayback"/>
+    <DeviceCapability Name="serialcommunication">
+      <Device Id="vidpid:2ca3 001f">
+        <Function Type="name:serialPort" />
+      </Device>
+    </DeviceCapability>
+    <DeviceCapability Name="lowLevel"/>
+  </Capabilities>
+</Package>

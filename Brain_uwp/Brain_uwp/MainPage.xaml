@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="Brain_uwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Brain_uwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d"
+    Background="Black">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <StackPanel Grid.Row="0">
+                <TextBlock Name="AppStateTB" > AppState:</TextBlock>
+                <TextBlock Name="AircraftStateTB" > AircraftState:</TextBlock>
+                <TextBlock Name="GpsTB"> GPS Sig:</TextBlock>
+                <TextBlock Name="HomLocTB" > Home Loc:</TextBlock>
+                <TextBlock Name="LocTB" > Location:</TextBlock>
+                <TextBlock Name="AltTB"> Altidude:</TextBlock>
+                <TextBlock Name="HeadingTB"> Heading:</TextBlock>
+                <ToggleButton x:Name="ToggleSimButt" >Toggle Simulation</ToggleButton>
+                <TextBlock Name="SimStatusTB"  > SimStatus:</TextBlock>
+                <TextBlock Name="SimParamTB" > SimParam:</TextBlock>
+                <Button x:Name="GroundStationButt" >Set Ground Station Enabled</Button>
+                <Button x:Name="TakeoffButt" >Takeoff</Button>
+                <Button x:Name="LandButt" Height="90" Margin="10" >Land! Press this when things go wrong</Button>
+                <Button x:Name="CenterMapButt" >Center To Aircraft</Button>
+                <ComboBox x:Name="ParkingLotMissionCB" Header="Parking Lot" PlaceholderText="Pick a parking Lot" Width="200">
+                    <x:String>R25</x:String>
+                    <x:String>R17</x:String>
+                    <x:String>R16</x:String>
+                    <x:String>R17Test</x:String>
+                    <x:String>Test</x:String>
+                </ComboBox>
+                <Button x:Name="LoadMissButt" >Load Waypoint Mission</Button>
+                <Button x:Name="StartMissButt" >Start Waypoint Mission</Button>
+                <TextBlock Name="WpMissResTB"  > Waypoint Mission Result:</TextBlock>
+                <TextBlock Name="InputPoolTB"  > Input Pool:</TextBlock>
+                <TextBlock Name="DroneGenPoolTB"  > Drone Gen Pool:</TextBlock>
+                <TextBlock Name="ResultPoolTB"  > Result Pool :</TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <SwapChainPanel x:Name="swapChainPanel"/>
+            </Grid>
+            <maps:MapControl 
+                Grid.Row="1"
+                ZoomInteractionMode="GestureAndControl"
+                TiltInteractionMode="GestureAndControl"
+                x:Name="WaypointMap"
+                ZoomLevel="18">
+            </maps:MapControl>
+        </Grid>
+    </Grid>
+</Page>
+        

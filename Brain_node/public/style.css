@@ -1,0 +1,12 @@
+
+#mapid { 
+    height: 100%;
+ }
+
+
+#liveFeed {
+    position: absolute;
+    right: 0%;
+    background: black;
+    z-index: 1000;
+}

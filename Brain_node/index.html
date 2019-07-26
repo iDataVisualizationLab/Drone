@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+
+        <title>Drone Interface</title>
+    </head>
+
+    <body>    
+        <input type="text" id="searchPlate" disabled>
+        
+        <button id="confirm_butt"> Confirm </button> 
+   
+        <select id="searchOption">
+            <option value="live_plates">Live</option>
+                <option value="unknown_plates">Show Not Founds</option>
+                <option value="search_plates">Manual Search</option>
+        </select>
+        Time interval: <input type="datetime-local" id="time_start"> - <input type="datetime-local" id="time_end">
+      
+        <span id="loading_text" style="white-space: nowrap;"></span>
+        <br>
+        
+        <img id="liveFeed"></img>
+        <div id="mapid">
+        </div>
+    </body>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</html>
