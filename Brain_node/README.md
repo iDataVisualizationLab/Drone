@@ -10,4 +10,4 @@ This is a system that acts as a basis for parking lot enforcement by using a DJI
 
 Drone controlling part of the system is built for drones that support DJI Windows SDK, however the rest of the system could still work, if they were able to mimic the output of the main program, which is developed by using DJI Windows SDK. 
 
-![System](https://github.com/sezer239/ParkinlotEnforcementServer/blob/master/basicsys.png)
+![System](https://github.com/iDataVisualizationLab/Drone/blob/master/basicsys.png)
