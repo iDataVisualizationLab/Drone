@@ -177,7 +177,7 @@ namespace Brain_uwp
             WaypointMap.Layers.Add(locationLayer);
             WaypointMap.MapElementClick += WaypointMap_MapElementClick;
 
-            DJISDKManager.Instance.RegisterApp("3f5a2dc7bcd532812ad05a33"); /*This key wont work if the package name is changed check out the link bellow*/
+            DJISDKManager.Instance.RegisterApp("_appkeyHere_"); /*This key wont work if the package name is changed check out the link bellow*/
             /* https://developer.dji.com/windows-sdk/documentation/application-development-workflow/workflow-register.html */
         }
 
