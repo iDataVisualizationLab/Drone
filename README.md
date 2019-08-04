@@ -2,7 +2,7 @@
 
 NOTE: THIS APPLICATION IS NOT FINISHED IT MAY CONTAIN BUGS.
 
-[![Watch the video](https://img.youtube.com/vi/AUeFbDf5x9A/0.jpg)](https://www.youtube.com/watch?v=AUeFbDf5x9A&feature=youtu.be)
+[![Watch the video](https://img.youtube.com/vi/AUeFbDf5x9A/0.jpg)](https://www.youtube.com/watch?v=AUeFbDf5x9A)
 ----------------------------------------------------------------------------------------------------------------------------------------
 # ParkinglotEnforcementServer
 
